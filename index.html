@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
-	<style>
-		body {
-			/*background-color: #FFFFFF;*/
-			font-family: karla;
-			font-size: 16px;
-		}
-		#chatbox {
-            position: absolute;
-            width: 600px;
-            left: 50%;
-            margin-top: 80px;
-            margin-left: -300px;
-            padding-bottom: 200px;
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <style>
+        body {
+            font-family: karla;
+            font-size: 20px;
         }
+	.emote {
+		margin-bottom: -8px;
+	}
+        #chatbox {
+		position: absolute;
+		left: 50%;
+		margin-left: -300px;
+		width: 600px;
+		height: 800px;
+		display: flex;
+  		justify-content: flex-end;
+  		flex-direction: column;
+        }
+	.chatName {
+		position: absolute;
+		margin-top: -46px;
+		margin-left: -48px;
+		padding: 5px 20px;
+		position: absolute;
+		background-color: #191B26;
+		border-radius: 16px;
+		color: #FFFFFF;
+	}
+	.chatNameSub {
+		position: absolute;
+		margin-top: -46px;
+		margin-left: -48px;
+		padding: 5px 20px;
+		position: absolute;
+		border-radius: 16px;
+		border: 1px solid #191B26;
+		background-color: #FFFFFF;
+		color: #191B26;
+	}
+	.chatMessage {
+		margin: 20px 12px;
+		width: 100%;
+		padding: 28px 32px 24px 32px;
+		border-radius: 16px;
+		border: 1px solid #9396A7;
+		color: #191B26;
+		background-color: #FFFFFF;
+	}
         p {
             color: #5f616c;
             margin: 400px 0 700px 0;
@@ -36,10 +70,9 @@
     <title>Proller's Chat</title>
 </head>
 <body>
-	<script src="https://raw.githubusercontent.com/proller-art/chatbox/main/tmi.min.js"></script>
-	<script src="https://raw.githubusercontent.com/proller-art/chatbox/main/chatapp.js"></script>
+	<script src="tmi.min.js"></script>
+	<script src="chatapp.js"></script>
 	<div id="chatbox">
-		test
 	</div>
 </body>
 </html>
