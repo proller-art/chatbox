@@ -11,10 +11,10 @@ client.on('message', (channel, tags, message, self) => {
 	// console.log(`${tags['display-name']}: ${message}`);
 	//chatlog.push(formatEmotes(message, tags.emotes));
 	//document.getElementById("chatbox").innerText = formatEmotes(message, tags.emotes);
-	document.getElementById("chatbox").innerText = beepo;
+	document.getElementById("chatbox").innerText = "beepo";
 });
 
-function formatEmotes(text, emotes) {
+/*function formatEmotes(text, emotes) {
 	var splitText = text.split('');
 	for(var i in emotes) {
 		var e = emotes[i];
@@ -31,4 +31,4 @@ function formatEmotes(text, emotes) {
 		}
 	}
 	return splitText.join('');
-}
+}*/
