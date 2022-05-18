@@ -10,7 +10,7 @@ client.on('message', (channel, tags, message, self) => {
 	// "Alca: Hello, World!"
 	// console.log(`${tags['display-name']}: ${message}`);
 	//chatlog.push(formatEmotes(message, tags.emotes));
-	document.getElementById("chatbox").innerHTML= formatEmotes(message, tags.emotes);
+	document.getElementById("chatbox").innerText= formatEmotes(message, tags.emotes);
 });
 
 function formatEmotes(text, emotes) {
