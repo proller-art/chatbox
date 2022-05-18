@@ -4,14 +4,14 @@ const client = new tmi.Client({
 
 client.connect();
 
-//var chatlog = {};
+var chatlog = "";
 
 client.on('message', (channel, tags, message, self) => {
 	// "Alca: Hello, World!"
 	// console.log(`${tags['display-name']}: ${message}`);
-	//chatlog.push(formatEmotes(message, tags.emotes));
+	chatlog = chatlog + `${tags['display-name']}: ${message}` + \n;
 	//document.getElementById("chatbox").innerText = formatEmotes(message, tags.emotes);
-	document.getElementById("chatbox").innerText = "beepo";
+	//document.getElementById("chatbox").innerText = "beepo";
 });
 
 /*function formatEmotes(text, emotes) {
