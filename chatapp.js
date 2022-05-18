@@ -11,7 +11,7 @@ client.on('message', (channel, tags, message, self) => {
 	// console.log(`${tags['display-name']}: ${message}`);
 	//chatlog.push(formatEmotes(message, tags.emotes));
 	document.getElementById("chatbox").innerText = formatEmotes(message, tags.emotes);
-	
+	document.getElementById("chatbox").innerText = beepo;
 });
 
 function formatEmotes(text, emotes) {
