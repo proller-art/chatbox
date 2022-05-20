@@ -1,5 +1,5 @@
 const client = new tmi.Client({
-	channels: [ 'loltyler1' ]
+	channels: [ 'Proller' ]
 });
 
 client.connect();
